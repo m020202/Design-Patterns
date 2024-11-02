@@ -1,10 +1,10 @@
 package com.pattern.design_patterns.singleton;
 
 public class Settings {
-    private static Settings INSTANCE = new Settings();
+    private static final Settings INSTANCE = new Settings();
     private Settings() {}
 
-    public static synchronized Settings getInstance() {
+    public static Settings getInstance() {
         return INSTANCE;
     }
 }
