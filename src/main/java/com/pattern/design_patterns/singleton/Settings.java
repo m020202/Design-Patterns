@@ -1,17 +1,13 @@
 package com.pattern.design_patterns.singleton;
 
 public class Settings {
-    private static volatile Settings instance;
     private Settings() {}
 
+    private static class InstanceHolder {
+        private static final Settings INSTANCE = new Settings();
+    }
+
     public static Settings getInstance() {
-        if (instance == null) {
-            synchronized (Settings.class) {
-                if (instance == null) {
-                    instance = new Settings();
-                }
-            }
-        }
-        return instance;
+        return InstanceHolder.INSTANCE;
     }
 }
