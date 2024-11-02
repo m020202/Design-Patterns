@@ -1,6 +1,5 @@
 package com.pattern.design_patterns.factory_method.before;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
