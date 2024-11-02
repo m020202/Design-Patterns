@@ -5,6 +5,8 @@ public class Client {
         Ship whiteship = ShipFactory.orderShip("Whiteship", "keesun@mail.com");
         System.out.println(whiteship);
 
+        System.out.println();
+
         Ship blackship = ShipFactory.orderShip("Blackship", "keesun@mail.com");
         System.out.println(blackship);
     }
