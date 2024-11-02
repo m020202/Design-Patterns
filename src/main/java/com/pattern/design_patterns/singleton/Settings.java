@@ -1,13 +1,10 @@
 package com.pattern.design_patterns.singleton;
 
-public class Settings {
-    private Settings() {}
+import java.io.Serializable;
 
-    private static class InstanceHolder {
-        private static final Settings INSTANCE = new Settings();
-    }
+public enum Settings {
+    INSTANCE;
 
-    public static Settings getInstance() {
-        return InstanceHolder.INSTANCE;
+    Settings() {
     }
 }
