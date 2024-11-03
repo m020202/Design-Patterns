@@ -1,17 +1,14 @@
 package com.pattern.design_patterns.factory_method.after;
 
-import com.pattern.design_patterns.factory_method.before.ShipFactory;
-
 public class Client {
     public static void main(String[] args) {
         Client client = new Client();
-
-        Ship whiteShip = new WhiteShipFactory().orderShip("WhiteShip", "m020202@naver.com");
-        System.out.println(whiteShip);
-
+        client.print(new WhiteShipFactory(), "white-ship", "m020202@naver.com");
         System.out.println();
+        client.print(new BlackShipFactory(), "black-ship", "m020202@naver.com");
+    }
 
-        Ship blackShip = new BlackShipFactory().orderShip("BlackShip", "m020202@naver.com");
-        System.out.println(blackShip);
+    private void print(ShipFactory shipFactory, String name, String email) {
+        System.out.println(shipFactory.orderShip(name, email));
     }
 }
