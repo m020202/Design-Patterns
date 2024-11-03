@@ -1,4 +1,4 @@
-package com.pattern.design_patterns.singleton;
+package com.pattern.design_patterns.creational_patterns.singleton;
 
 public class App {
     public static void main(String[] args) {

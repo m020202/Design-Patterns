@@ -1,4 +1,4 @@
-package com.pattern.design_patterns.factory_method.after;
+package com.pattern.design_patterns.creational_patterns.factory_method.after;
 
 public class WhiteShip extends Ship {
     public WhiteShip(String name) {

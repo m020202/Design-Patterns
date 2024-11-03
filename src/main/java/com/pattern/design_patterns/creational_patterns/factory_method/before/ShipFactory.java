@@ -1,4 +1,4 @@
-package com.pattern.design_patterns.factory_method.before;
+package com.pattern.design_patterns.creational_patterns.factory_method.before;
 
 public class ShipFactory {
     public static Ship orderShip(String name, String email) {

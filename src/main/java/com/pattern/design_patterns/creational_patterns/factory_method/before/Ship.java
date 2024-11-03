@@ -1,4 +1,4 @@
-package com.pattern.design_patterns.factory_method.before;
+package com.pattern.design_patterns.creational_patterns.factory_method.before;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
