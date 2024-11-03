@@ -1,8 +1,8 @@
 package com.pattern.design_patterns.factory_method.after;
 
 public class WhiteShip extends Ship {
-    public WhiteShip() {
-        setName("white-ship");
+    public WhiteShip(String name) {
+        setName(name);
         setLogo("\uD83D\uDEE5️");
         setColor("white");
     }

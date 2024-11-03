@@ -1,9 +1,9 @@
 package com.pattern.design_patterns.factory_method.after;
 
 public class BlackShip extends Ship{
-    public BlackShip(){
+    public BlackShip(String name){
+        setName(name);
         setLogo("⚓");
-        setName("black-ship");
         setColor("black");
     }
 }

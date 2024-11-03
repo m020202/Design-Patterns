@@ -4,7 +4,7 @@ public interface ShipFactory {
     default Ship orderShip(String name, String email) {
         validate(name, email);
         prepareFor(name);
-        Ship ship = createShip();
+        Ship ship = createShip(name);
         sendEmailTo(email, ship);
         return ship;
     }
@@ -13,7 +13,7 @@ public interface ShipFactory {
         System.out.println(ship.getName() + " 다 만들었습니다.");
     }
 
-    Ship createShip();
+    Ship createShip(String name);
 
     private void validate(String name, String email) {
         if (name == null || name.isBlank()) {
