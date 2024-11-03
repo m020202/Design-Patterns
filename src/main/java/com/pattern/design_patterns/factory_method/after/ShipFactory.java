@@ -1,7 +1,5 @@
 package com.pattern.design_patterns.factory_method.after;
 
-import com.pattern.design_patterns.factory_method.before.Ship;
-
 public interface ShipFactory {
     default Ship orderShip(String name, String email) {
         validate(name, email);
@@ -10,7 +8,6 @@ public interface ShipFactory {
         sendEmailTo(email, ship);
         return ship;
     }
-
 
     private void sendEmailTo(String email, Ship ship) {
         System.out.println(ship.getName() + " 다 만들었습니다.");

@@ -1,9 +1,8 @@
 package com.pattern.design_patterns.factory_method.after;
 
-
-public class WhiteShipFactory implements ShipFactory{
+public class BlackShipFactory implements ShipFactory {
     @Override
     public Ship createShip() {
-        return new WhiteShip();
+        return new BlackShip();
     }
 }
