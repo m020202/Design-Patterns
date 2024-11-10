@@ -8,7 +8,7 @@ public class LoginHandler {
     }
 
     public String login(String username, String password) {
-        UserDetails userDetails = userDetailsService.loadUser(username);
+        UserDetails userDetails = userDetailsService.loadUser(username, password);
         if (userDetails.getPassword().equals(password)) {
             return userDetails.getUsername();
         } else {

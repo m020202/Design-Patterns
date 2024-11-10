@@ -1,10 +1,10 @@
 package com.pattern.design_patterns.structural_patterns.adapter.before;
 
 public class AccountService {
-    public Account findAccountByUsername(String username) {
+    public Account findAccountByUsername(String username, String password) {
         Account account = new Account();
         account.setName(username);
-        account.setPassword(username);
+        account.setPassword(password);
         account.setEmail(username);
         return account;
     }
