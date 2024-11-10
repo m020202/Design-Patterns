@@ -14,7 +14,7 @@ public class AccountUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUser(String username, String password) {
-        Account account = accountService.findAccountByUsername(username, password);
+        Account account = accountService.findAccountByUsernameAndPassword(username, password);
         return new AccountUserDetails(account);
     }
 }
