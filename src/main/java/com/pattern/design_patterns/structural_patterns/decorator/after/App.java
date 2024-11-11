@@ -18,6 +18,5 @@ public class App {
         client.writeComment("오징어게임");
         client.writeComment("보는게 하는거보다 재밌을 수가 없지...");
         client.writeComment("http://naver.com");
-
     }
 }
