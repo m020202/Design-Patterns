@@ -10,6 +10,5 @@ public class CommentDecorator implements CommentService {
     @Override
     public void addComment(String comment) {
         commentService.addComment(comment);
-
     }
 }

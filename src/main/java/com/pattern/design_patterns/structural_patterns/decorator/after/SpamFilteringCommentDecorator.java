@@ -7,12 +7,12 @@ public class SpamFilteringCommentDecorator extends CommentDecorator {
 
     @Override
     public void addComment(String comment) {
-        if (!isNotSpam(comment)) {
+        if (!isSpam(comment)) {
             super.addComment(comment);
         }
     }
 
-    private boolean isNotSpam(String comment) {
+    private boolean isSpam(String comment) {
         return comment.contains("http");
     }
 }
