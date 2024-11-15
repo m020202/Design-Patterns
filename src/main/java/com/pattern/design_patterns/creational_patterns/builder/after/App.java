@@ -20,5 +20,6 @@ public class App {
 
         TourDirector tourDirector = new TourDirector(builder);
         TourPlan cancunPlan = tourDirector.cancunTrip();
+
     }
 }
