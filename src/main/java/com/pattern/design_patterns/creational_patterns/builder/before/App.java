@@ -1,4 +1,4 @@
-package com.pattern.design_patterns.creational_patterns.builder;
+package com.pattern.design_patterns.creational_patterns.builder.before;
 
 import java.time.LocalDate;
 
@@ -8,7 +8,6 @@ public class App {
         TourPlan shortTrip = new TourPlan();
         shortTrip.setTitle("오레곤 롱비치 여행");
         shortTrip.setStartDate(LocalDate.of(2021, 7, 15));
-
 
         TourPlan tourPlan = new TourPlan();
         tourPlan.setTitle("칸쿤 여행");

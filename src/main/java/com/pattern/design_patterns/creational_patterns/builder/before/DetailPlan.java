@@ -1,4 +1,4 @@
-package com.pattern.design_patterns.creational_patterns.builder;
+package com.pattern.design_patterns.creational_patterns.builder.before;
 
 public class DetailPlan {
 
