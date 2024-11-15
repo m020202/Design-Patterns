@@ -2,7 +2,7 @@ package com.pattern.design_patterns.creational_patterns.builder.java;
 
 import java.util.stream.Stream;
 
-public class AdapterInJava {
+public class BuilderInJava {
     public static void main(String[] args) {
         // StringBuilder
         StringBuilder stringBuilder = new StringBuilder();
